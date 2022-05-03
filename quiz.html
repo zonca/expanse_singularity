@@ -1,0 +1,67 @@
+<h3>Quiz</h3>
+
+<ol>
+
+
+
+
+
+<li>Which of the following is not true about <a href="https://singularity.lbl.gov">Singularity</a>?<br />
+<asp:RadioButtonList ID="rList1" runat="server" RepeatLayout="Flow">
+    <asp:ListItem Value="a" Text="Singularity provides flexibility for a particular OS Environment." />
+    <asp:ListItem Value="b" Text="Singularity is a relatively new development that has become very popular on XSEDE systems like Expanse." />
+    <asp:ListItem Value="c" Text="Singularity allows groups to easily migrate complex software stacks from their campus to XSEDE systems." />
+    <asp:ListItem Value="d" Text="Singularity requires a supercomputer." />
+    <asp:ListItem Value="e" Text="Singularity runs in user space, and requires very little special support – in fact it actually reduces it in some cases." />
+</asp:RadioButtonList>
+<br /><asp:Label ID="lblScore1" runat="server" ForeColor="#990000" /><br />
+</li>
+
+
+<li>True or False:  If you plan to run your containers on an XSEDE system you will need to build your containers elsewhere and then copy them to the XSEDE system such as Expanse.<br />
+<asp:RadioButtonList ID="rList2" runat="server" RepeatLayout="Flow">
+    <asp:ListItem Value="a" Text="True" />
+    <asp:ListItem Value="b" Text="False" />
+</asp:RadioButtonList>
+<br /><asp:Label ID="lblScore2" runat="server" ForeColor="#990000" /><br />
+</li>
+
+
+
+
+<li>Which of the following is required to run Tensorflow with Singularity on Expanse?  (choose all that apply)<br />
+<asp:CheckBoxList ID="rList3" runat="server" RepeatLayout="Flow">  
+    <asp:ListItem Value="a" Text="Request a GPU node" />   
+    <asp:ListItem Value="b" Text="Load the singularity module" />   
+    <asp:ListItem Value="c" Text="Issue the Singularity 'shell' command" />   
+    <asp:ListItem Value="d" Text="Install Singularity" />   
+    <asp:ListItem Value="e" Text="All of the above" />   
+    </asp:CheckBoxList>
+<br /><asp:Label ID="lblScore3" runat="server" ForeColor="#990000" /><br />
+</li>
+
+
+<li>True or False:  Singularity containers cannot be integrated with the SLURM Job Manager.<br />
+<asp:RadioButtonList ID="rList4" runat="server" RepeatLayout="Flow">
+    <asp:ListItem Value="a" Text="True" />
+    <asp:ListItem Value="b" Text="False" />
+</asp:RadioButtonList>
+<br /><asp:Label ID="lblScore4" runat="server" ForeColor="#990000" /><br />
+</li>
+
+<li>True or False:  Singularity containers require a GPU node.<br />
+<asp:RadioButtonList ID="rList5" runat="server" RepeatLayout="Flow">
+    <asp:ListItem Value="a" Text="True" />
+    <asp:ListItem Value="b" Text="False" />
+</asp:RadioButtonList>
+<br /><asp:Label ID="lblScore5" runat="server" ForeColor="#990000" /><br />
+</li>
+
+
+</ol>
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+
+
+
+
+
+<h3>Background</h3>
+
+
+
+
+
+
+
+
+<h3>Why Singularity?</h3>
+<p>Below is a typical list of commands you would need to issue in order to implement a functional Python installation for scientific research:</p>
+<pre>COMMAND=apt-get -y install libx11-dev
+COMMAND=apt-get install build-essential python-libdev
+COMMAND=apt-get install build-essential openmpi-dev
+COMMAND=apt-get install cmake
+COMMAND=apt-get install g++
+COMMAND=apt-get install git-lfs
+COMMAND=apt-get install libXss.so.1
+COMMAND=apt-get install libgdal1-dev libproj-dev
+COMMAND=apt-get install libjsoncpp-dev libjsoncpp0
+COMMAND=apt-get install libmpich-dev --user
+COMMAND=apt-get install libpthread-stubs0 libpthread-stubs0-dev libx11-dev libx11-d
+COMMAND=apt-get install libudev0:i386
+COMMAND=apt-get install numpy
+COMMAND=apt-get install python-matplotlib
+COMMAND=apt-get install python3</pre>
+<p>Singularity allows you to avoid this time-consuming series of steps by packaging these commands in a re-usable and editable script, allowing you to quickly, easily, and repeatedly implement a custom container designed specifically for your analytical needs. </p>
+
+
+
+
+<center><img src="images/vm_container_comparisons.png" alt="KNL Quadrant Cluster Mode" width="600px" /></center>
+<p class="caption">Comparison of a VM vs. Docker vs. Singularity.
+    <br />Source: <a href="http://www.hpcadvisorycouncil.com/events/2017/stanford-workshop/pdf/GMKurtzer_Singularity_Keynote_Tuesday_02072017.pdf#43">Greg Kurtzer keynote at HPC Advisory Council 2017 @ Stanford</a>
+</p>
+
+
+<p>Additional features of Singularity include:</p>
+<ul>
+  <li>Singularity provides flexibility for a particular OS Environment.</li>
+  <li>Singularity (http://singularity.lbl.gov)is a relatively new development that has become very popular on XSEDE systems like Expanse.</li>
+  <li>Singularity allows groups to easily migrate complex software stacks from their campus to XSEDE systems.</li>
+  <li>Singularity runs in user space, and requires very little special support – in fact it actually reduces it in some cases.</li>
+  <li>Singularity offers a convenient way to run applications such as Tensorflow, ParaView, Torch, Fenics, and custom user applications.</li>
+  <li>Docker images can be imported into Singularity.</li>
+</ul>
+
+
+
+
+
+
+

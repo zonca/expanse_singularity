@@ -1,0 +1,24 @@
+
+
+
+
+
+<h3>Build from a Definitions File</h3>
+
+
+
+
+
+<p>Singularity allows you to use a 'definitions file' so you can reproduce the resulting container configurations on demand. Let’s say you want to create a container with Ubuntu with Anaconda. First, we need our definitions file. 
+    Here's an example Anaconda definition file: <a href="https://github.com/mkandes/naked-singularity/blob/master/definition-files/anaconda/Singularity.anaconda3-py38-2020.11-ubuntu-18.04">ububtu-anaconda.def</a></p>
+
+<p>The following command creates an ubuntu-anaconda.sif image from the definitions file <code>Singularity.anaconda3-py38-2020.11-ubuntu-18.04</code>:</p>
+<pre>sudo singularity build ubuntu-anaconda.sif definition-files/anaconda/Singularity.anaconda3-py38-2020.11-ubuntu-18.04</pre><br />
+<p>This may take a while to complete.</p>
+
+      
+
+
+
+
+
