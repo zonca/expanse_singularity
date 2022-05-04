@@ -1,0 +1,18 @@
+<h3 id="shell-access">Shell Access</h3>
+<p>Once the container is downloaded, you can <code>shell</code> into it with the following:</p>
+<pre><code>singularity shell ubuntu-anaconda.sif</code></pre>
+<p><br />
+</p>
+<p>Once you enter the container you should see a different command prompt. At this new prompt, try typing:</p>
+<pre><code>whoami</code></pre>
+<p><br />
+</p>
+<p>Your user id should be identical to your user id outside the container. However, the operating system will probably be different. Try issuing the following command from inside the container to see what the OS version is:</p>
+<pre><code>cat /etc/*-release</code></pre>
+<p><br />
+</p>
+<p>Check the python version within the container</p>
+<pre><code>python3 --version
+Python 3.8.5</code></pre>
+<p><br />
+</p>
