@@ -1,0 +1,29 @@
+<h3 id="integrate-the-container-with-the-slurm-job-manager">Integrate the Container with the Slurm Job Manager</h3>
+<p>Most users simply want to submit their jobs to the Expanse queue and let them run to completion and go on to other things while waiting. Slurm is the job manager for Expanse.</p>
+<p>Below is an example job script which will start a Singularity container on a node in the Expanse compute queue and run a Python program inside it. You must copy the Python program, <code>tf2-train-cnn-cifar-10.py</code>, into your current working directory from <code>/cm/shared/examples/sdsc/tensorflow</code> if you wish to run it using the job script. The script is a modification of an example found on Expanse, <code>/cm/shared/examples/sdsc/tensorflow/run-tf2-train-cnn-cifar-10-compute.sh</code></p>
+<pre><code>#!/usr/bin/env bash
+
+#SBATCH --job-name=tf2-train-cnn-cifar-10-compute
+#SBATCH --account=use300
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=128
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=249325M
+#SBATCH --time=00:30:00
+#SBATCH --output=%x.o%j.%N
+
+declare -xr SINGULARITY_MODULE=&#39;singularitypro/3.9&#39;
+
+module purge
+module load &quot;${SINGULARITY_MODULE}&quot;
+module list
+printenv
+
+time -p singularity exec --bind /expanse,/scratch --nv /cm/shared/apps/containers/singularity/tensorflow/tensorflow-2.5.1-ubuntu-18.04-cuda-11.2-mlnx-ofed-4.7-3.2.9.0-openmpi-4.0.5-20211003.sif python3 -u tf2-train-cnn-cifar-10.py </code></pre>
+<p>The above script requests 1 node and 128 tasks per node with a wall time of 30 minutes. Notice that the Singularity module is loaded.</p>
+<p>You may need to modify the line specifying with allocation to be used for this job (--account=use300). When you are ready to submit the job to the Expanse queue, issue the following command (make sure you copy the script as well the python code into a directory that you can write into):</p>
+<pre><code>sbatch run-tf2-train-cnn-cifar-10-compute.sh</code></pre>
+<p>To view the status of your job in the Expanse queue, issue the following:</p>
+<pre><code>squeue -u </code></pre>
+<p>When the job is complete, view the output which should be written to the output file <code>tf2-train-cnn-cifar-10-compute.o%j.%N</code> where <code>%j</code> is the job ID and <code>%N</code> is the node's hostname.</p>

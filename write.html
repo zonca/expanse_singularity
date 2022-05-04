@@ -1,0 +1,9 @@
+<h3 id="write-into-a-singularity-container">Write Into a Singularity Container</h3>
+<p>Try writing into the container (as root, you might be prompted for your password):</p>
+<pre><code>sudo singularity shell --writable ubuntu</code></pre>
+<p><br />
+</p>
+<p>Create a "test" file in the "/" directory and view its contents</p>
+<pre><code>Singularity&gt; echo &quot;my test file&quot; &gt; /test
+Singularity&gt; cat /test 
+my test file</code></pre>
