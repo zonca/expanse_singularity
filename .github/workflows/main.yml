@@ -18,6 +18,9 @@ jobs:
       - name: convert md to html
         run: |
           find ./ -iname '*.md' -type f ! -name README.md -exec sh -c 'pandoc ${0} -o output/${0%.md}.html' {} \;
+      - name: copy TOC and images
+        run: |
+          cp -r images output/ && cp TOC.txt output/
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
