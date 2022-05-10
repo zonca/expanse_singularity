@@ -26,8 +26,7 @@ packaging these commands in a re-usable and editable script, allowing
 you to quickly, easily, and repeatedly implement a custom container
 designed specifically for your analytical needs.
 
-![KNL Quadrant Cluster
-Mode](images/vm_container_comparisons.png){width="600px"}
+![KNL Quadrant Cluster Mode](images/vm_container_comparisons.png){width="600px"}
 
 Comparison of a VM vs. Docker vs. Singularity.\
 Source: [Greg Kurtzer keynote at HPC Advisory Council 2017 @
@@ -36,13 +35,8 @@ Stanford](http://www.hpcadvisorycouncil.com/events/2017/stanford-workshop/pdf/GM
 Additional features of Singularity include:
 
 -   Singularity provides flexibility for a particular OS Environment.
--   Singularity (http://singularity.lbl.gov)is a relatively new
-    development that has become very popular on XSEDE systems like
-    Expanse.
--   Singularity allows groups to easily migrate complex software stacks
-    from their campus to XSEDE systems.
--   Singularity runs in user space, and requires very little special
-    support - in fact it actually reduces it in some cases.
--   Singularity offers a convenient way to run applications such as
-    Tensorflow, ParaView, Torch, Fenics, and custom user applications.
+-   Singularity has become very popular on XSEDE systems like Expanse.
+-   Singularity allows groups to easily migrate complex software stacks from their campus to XSEDE systems.
+-   Singularity runs in user space, and requires very little special support - in fact it actually reduces it in some cases.
+-   Singularity offers a convenient way to run applications such as Tensorflow, ParaView, Torch, Fenics, and custom user applications.
 -   Docker images can be imported into Singularity.
