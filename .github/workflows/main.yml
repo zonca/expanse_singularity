@@ -17,7 +17,7 @@ jobs:
             mkdir -p output
       - name: convert md to html
         run: |
-          find ./ -iname '*.md' -type f -exec sh -c 'pandoc ${0} -o output/${0%.md}.html' {} \;
+          find ./ -iname '*.md' -type f ! -name README.md -exec sh -c 'pandoc ${0} -o output/${0%.md}.html' {} \;
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
