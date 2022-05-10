@@ -7,7 +7,7 @@ Once the file is transferred, login to Expanse:
 Navigate to your scratch directory on Expanse, which should be something
 like:
 
-    cd /expanse/lustre/scratch//temp_project/
+    cd /expanse/lustre/scratch/$USER/temp_project
 
 Next, you should request an interactive session on one of Expanse\'s
 compute, debug, or shared nodes.
