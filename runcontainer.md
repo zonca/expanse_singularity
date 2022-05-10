@@ -37,7 +37,7 @@ try executing the following commands:
 If all goes well, you should see above outputs corresponding to the
 commands. You might also see some warnings pertaining to non-existent
 bind points. You can resolve this by adding some additional lines to
-your definitions file before you build your container. We did not do
+your definition file before you build your container. We did not do
 that for this tutorial, but you can find more information about [bind
 paths and
 mounts](https://sylabs.io/guides/3.0/user-guide/bind_paths_and_mounts.html).
