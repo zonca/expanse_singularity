@@ -2,7 +2,7 @@
 <p>Once the file is transferred, login to Expanse:</p>
 <pre><code>ssh &lt;username&gt;@login.expanse.sdsc.edu</code></pre>
 <p>Navigate to your scratch directory on Expanse, which should be something like:</p>
-<pre><code>cd /expanse/lustre/scratch//temp_project/</code></pre>
+<pre><code>cd /expanse/lustre/scratch/$USER/temp_project</code></pre>
 <p>Next, you should request an interactive session on one of Expanse's compute, debug, or shared nodes.</p>
 <pre><code>srun --pty --nodes=1 --ntasks-per-node=10 -A  -p compute -t 01:00:00  --wait 0 /bin/bash </code></pre>
 <p>Once your request is approved your command prompt should reflect the new node id.</p>
@@ -14,5 +14,5 @@ Python 3.6.8
 singularity shell ubuntu-anaconda.sif 
 Singularity&gt; python3 --version
 Python 3.8.5</code></pre>
-<p>If all goes well, you should see above outputs corresponding to the commands. You might also see some warnings pertaining to non-existent bind points. You can resolve this by adding some additional lines to your definitions file before you build your container. We did not do that for this tutorial, but you can find more information about <a href="https://sylabs.io/guides/3.0/user-guide/bind_paths_and_mounts.html">bind paths and mounts</a>.</p>
+<p>If all goes well, you should see above outputs corresponding to the commands. You might also see some warnings pertaining to non-existent bind points. You can resolve this by adding some additional lines to your definition file before you build your container. We did not do that for this tutorial, but you can find more information about <a href="https://sylabs.io/guides/3.0/user-guide/bind_paths_and_mounts.html">bind paths and mounts</a>.</p>
 <p>Additional examples are located on Expanse at <code>/cm/shared/apps/containers/singularity/</code>.</p>
