@@ -1,5 +1,7 @@
 ### Goals
 
+FIXME update after review is done
+
 In this tutorial you will learn:
 
 1.  the basic procedure for downloading and installing Singularity
