@@ -88,3 +88,10 @@ Singularity containers by default have access to the user home folder, in the ca
 Finally we can submit it with:
 
     sbatch run-singularity.slurm
+
+Notice we can also mix commands from the host and the container, for example we can do a bash for loop on the host, pass the variable as argument to a container execution and redirect the output to a file on the host:
+
+    for datafile in *.hdf5
+    do
+        singularity exec $CONTAINER_FILE python3 process_data.py $datafile > ${datafile}_execution.log
+    done
