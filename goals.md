@@ -1,10 +1,7 @@
 ### Goals
 
-FIXME update after review is done
-
 In this tutorial you will learn:
 
-1.  the basic procedure for downloading and installing Singularity
-2.  basic commands to build your own Singularity containers
-3.  how to pull a pre-built container from the Singularity Hub
-4.  how to run pre-built Singularity containers on Expanse
+1.  how to pull prebuilt Docker or Singularity to Expanse
+1.  how to execute Singularity containers interatively and via SLURM jobs
+1.  how to build a container outside of Expanse

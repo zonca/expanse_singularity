@@ -1,9 +1,7 @@
 ### Prerequisites
 
-FIXME update after review is done
-
 The purpose of this tutorial is to enable you to use XSEDE\'s Expanse
-supercomputer at [SDSC](http://www.sdsc.edu) to run your jobs. You will
+supercomputer at [SDSC](http://www.sdsc.edu) to run your jobs using Singularity. You will
 need the following:
 
 -   Basic familiarity with using Expanse
