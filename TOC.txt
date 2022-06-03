@@ -9,7 +9,6 @@ building.html
 scratchimage.html
 prebuiltimage.html
 definitionsfile.html
-shell.html
 write.html
 running.html
 transfer.html
