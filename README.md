@@ -8,20 +8,20 @@ Current version <https://cvw.cac.cornell.edu/ExpanseSing/default>
 
 ### Content
 
-* <Default.md>
-* <prerequisites.md>
-* <commonusecases.md>
-* <goals.md>
-* <prebuiltimage.md>
-* <sdscimages.md>
-* <runcontainer.md>
-* <rungpucontainer.md>
-* <install.md>
-* <building.md>
-* <scratchimage.md>
-* <definitionsfile.md>
-* <write.md>
-* <running.md>
-* <transfer.md>
-* <integrate.md>
-* <quiz.md>
+* <./Default.md>
+* <./prerequisites.md>
+* <./commonusecases.md>
+* <./goals.md>
+* <./prebuiltimage.md>
+* <./sdscimages.md>
+* <./runcontainer.md>
+* <./rungpucontainer.md>
+* <./install.md>
+* <./building.md>
+* <./scratchimage.md>
+* <./definitionsfile.md>
+* <./write.md>
+* <./running.md>
+* <./transfer.md>
+* <./integrate.md>
+* <./quiz.md>
