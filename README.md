@@ -9,12 +9,13 @@ Current version <https://cvw.cac.cornell.edu/ExpanseSing/default>
 ### Content
 
 * <Default.md>
+* <prerequisites.md>
 * <commonusecases.md>
 * <goals.md>
 * <prebuiltimage.md>
 * <sdscimages.md>
-* <prerequisites.md>
-* <background.md>
+* <runcontainer.md>
+* <rungpucontainer.md>
 * <install.md>
 * <building.md>
 * <scratchimage.md>
@@ -22,6 +23,5 @@ Current version <https://cvw.cac.cornell.edu/ExpanseSing/default>
 * <write.md>
 * <running.md>
 * <transfer.md>
-* <runcontainer.md>
 * <integrate.md>
 * <quiz.md>
