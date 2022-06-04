@@ -8,16 +8,12 @@ Ubuntu OS in the current working directory.
 
     sudo singularity build --sandbox ubuntu/ library://ubuntu
 
-\
-
 To modify the contents of the directory use `--writable` option. For
 example, the following creates a file named test.
 
     sudo singularity exec --writable ubuntu touch /test
 
-\
-
 Convert the sandboxed image to the default immutable image format
 (Singularity Image File - sif):
 
-    singularity build ubuntu.sif ubuntu
+    sudo singularity build ubuntu.sif ubuntu

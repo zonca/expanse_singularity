@@ -1,9 +1,10 @@
-### Building and Access
+### Building Singularity containers
 
-We can build / utilize a Singularity container in different ways:
+For further constumization of images or for building images from scratch
+we need access to a GNU/Linux machine with `root` privileges.
 
--   Build images from scratch
--   Import a prebuilt image
--   Build from a definition file
--   Shell Access
--   Write
+Then the Singularity workflow is composed of 3 steps:
+
+* Build the image on the external Linux system
+* Transfer to Expanse
+* Run on Expanse via SLURM

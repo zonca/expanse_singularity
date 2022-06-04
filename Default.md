@@ -10,7 +10,7 @@
 with a community version from [the Sylabs company](https://sylabs.io/), which kept the Singularity name,
 and a fully open-source project now named [Apptainer](http://apptainer.org) under the Linux Foundation.
 
-As of May 2022, Expanse offers SingularityPRO from Sylabs, it is possible that
+As of May 2022, Expanse currently offers SingularityPRO from Sylabs, it is possible that in the future it will be supporting both platforms. Use `module avail <search string>` on your terminal on Expanse to check the most up-to-date availability.
 
 Jeff Sale, Trevor Cooper, Manu Shantharam, Andrea Zonca\
 San Diego Supercomputer Center\

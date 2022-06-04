@@ -1,30 +1,20 @@
 ### Installing Singularity
 
-Use the following steps to install Singularity 3.5.3 and its
+Use the following steps to install a recent version of  Singularity and its
 dependencies on your Linux desktop, laptop, or virtual machine.
 
     git clone https://github.com/mkandes/naked-singularity.git
-
-\
-
     cd naked-singularity
-
-\
 
 If you have older versions of singularity installed, uninstall them now:
 
     sudo ./naked-singularity.sh uninstall
 
-\
-
-Install Singularity 3.5.3:
+Install Singularity and its requirements:
 
     sudo ./naked-singularity.sh install
 
-\
-
-Once the installation is completed, you can check to see if it succeeded
-in a few different ways:
+Once the installation is completed:
 
     which singularity
-    singularity -version
+    singularity --version
