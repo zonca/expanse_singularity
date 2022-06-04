@@ -8,14 +8,22 @@ Current version <https://cvw.cac.cornell.edu/ExpanseSing/default>
 
 ### Content
 
+#### Introduction
+
 * [Default](Default.md)
 * [prerequisites](prerequisites.md)
 * [commonusecases](commonusecases.md)
 * [goals](goals.md)
+
+### Prebuilt images
+
 * [prebuiltimage](prebuiltimage.md)
 * [sdscimages](sdscimages.md)
 * [runcontainer](runcontainer.md)
 * [rungpucontainer](rungpucontainer.md)
+
+### Build custom images
+
 * [building](building.md)
 * [buildingjetstream](buildingjetstream.md)
 * [install](install.md)

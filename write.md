@@ -1,4 +1,4 @@
-### Write Into a Singularity Container
+### Write into a Singularity Container
 
 Try writing into the container (as root, you might be prompted for your
 password):
