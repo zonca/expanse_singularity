@@ -31,4 +31,3 @@ Current version <https://cvw.cac.cornell.edu/ExpanseSing/default>
 * [definitionsfile](definitionsfile.md)
 * [write](write.md)
 * [transfer](transfer.md)
-* [quiz](quiz.md)
